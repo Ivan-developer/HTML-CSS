@@ -1,0 +1,11 @@
+Браузерные отступы: <p>,
+<h1>
+    width / height - не работает для inline - надо сделать их display: block
+    Что бы <div> поставить в ряд надо их сделать display: inline-block,
+        тогда мы сохраним width / heght , если мы сделаем , display: inline , то пропадет width / heght у блока
+        display: block / display: inline / display: inline-block
+        padding - внешные отступы
+        margin - внутрение отступы
+        Reset CSS - сброс всех базовых настроек
+        Normalize - сброс браузерных margin
+        <link> - подключение css
