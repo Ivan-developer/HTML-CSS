@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .hoverme {
+            border-bottom: 1px dotted black;
+            position: relative;
+            margin: 16px;
+            display: inline-block;
+        }
+
+        .tooltip {
+            background-color: grey;
+            color: white;
+            display: none;
+            border-radius: 4px;
+            padding: 8px;
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+        }
+
+        .hoverme:hover .tooltip {
+            display: block;
+        }
+
+        /*
+Tooltip
+ 
+Создайте тултип, который будет появляться при наведении курсора мыши на текст.
+Результат должен быть как на картинке картинке
+Основные требования:
+Нормализируйте Css (normalize.min.css)
+Тултип сделайте тегом <span> а основной текст тегом <div>
+Сделайте внешний отступ для текста 16px (margin: 16px). 
+Добавьте нижнее подчеркивание 1px dotted black(border-bottom: 1px dotted black;). 
+Обратите внимание на ширину текста (display: inline-block;).
+Тултип должен иметь grey фон(background-color: grey;), 4px радиус границы(border-radius: 4px;), 
+внутренние отступы 8px(padding: 8px;), отступать вниз от текста Hover over me (bottom: -40px;)
+Дополнительно добавьте основному тексту атрибут title="I'm a title text". 
+При наведении на текст браузер должен показать этот title (display: block)*/
+    </style>
+</head>
+
+<body>
+    <div class="hoverme" title="I'm a title text"> Hover over me
+        <span class="tooltip">I'm a tooltip</span>
+    </div>
+
+
+</body>
+
+</html>
