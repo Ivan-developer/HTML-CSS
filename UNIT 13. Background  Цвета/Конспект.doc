@@ -1,0 +1,5 @@
+background-color: - цвет фона
+background-image: url(nature.jpeg);
+background-positon: center; - картинка будет по центру
+background-size: contain; - включает контент / cover - на всю width / height
+background-repeat: no-repeat; - принимает всю длину и высоту

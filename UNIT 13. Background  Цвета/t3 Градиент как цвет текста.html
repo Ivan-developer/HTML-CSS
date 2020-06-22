@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient Text Color</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+.header-text {
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    background: linear-gradient(45deg, yellow, red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+/*Градиент как цвет текста
+ 
+Задача - закрасить текст с помощью градиента
+Начальный HTML код находится в редакторе ниже. Его можно модифицировать. 
+Для добавления стилей используйте styles.css
+Помним, что у этого приема ограниченная поддержка браузеров, которую можно глянуть здесь
+Основные требования:
+Нормализуем CSS
+Обнулить внешние отступы и задать внутренние 16px для заголовка
+Разместить текст в центре по горизонтали и отобразить в UPPERCASE
+Шрифт - Arial, насыщенность - 700, размер шрифта - 96px
+Цвет шрифта должен быть градиентом от желтого к красному под углом 45 градусов*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-text">Super title</h1>
+    </header>
+</body>
+
+</html>

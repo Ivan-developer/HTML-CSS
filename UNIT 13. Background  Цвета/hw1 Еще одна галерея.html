@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>One more gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <style>
+        div>div {
+            border: 1px dotted grey;
+            margin: 16px;
+        }
+
+        .gallery {
+            display: flex;
+        }
+
+        .image {
+            width: 200px;
+            height: 200px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+
+        /*Еще одна галерея ;)
+ 
+Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным. 
+Для добавления стилей используйте styles.css
+Результат должен быть, как на картинке example.jpg
+Основные требования:
+Расположите элементы с классом .image горизонтально в линию и задайте им высоту и ширину равную 200px
+Элементам уже заданы фоновые изображения через атрибут style. Ваша задача расположить картинки так, 
+чтобы полностью помещались в див и не искажали пропорции (смотрите пример)
+*/
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="image"
+            style="background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw1/nature1.jpeg)">
+        </div>
+        <div class="image"
+            style="background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw1/nature2.jpeg)">
+        </div>
+        <div class="image"
+            style="background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw1/nature3.jpeg)">
+        </div>
+    </div>
+</body>
+
+</html>
