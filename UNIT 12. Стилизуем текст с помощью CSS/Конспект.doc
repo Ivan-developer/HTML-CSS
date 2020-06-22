@@ -1,0 +1,51 @@
+12 Lesson:
+fonts.google.com - для подключение шрифта , добавить кирилицу или латиницу , плюс добавить 700 жирность , 
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500i,700,700i&display=swap&subset=cyrillic"rel="stylesheet"> rel="stylesheet">
+
+font-family: 'Roboto', sans-serif; // Если не сработает первый то сработает второй
+
+font-size: 18px;
+
+text-aligh: center; по центру 
+
+word-spacing: - расстояние между словами 
+
+lettet-spacing: - расстояние между буквами
+
+text-transform: uppercase - все большие , разные свойства у объекта 
+
+ line-height: - высота линии 
+
+ font-weight: bold; 700; 900; - надо подключать
+
+ text-decoration: none; underline;
+
+opacity: 80%;
+
+text-decoration: underline;
+
+font-weight: bold;
+
+ list-style-type: none; - убрать у списков впереди точку или цифру 
+
+ font-style: oblique;
+
+ white-space: nowrap; - текст в одну линию , не переходит на другую строку 
+
+ text-overflow: ellipsis; текст обрезается под размер экрана 
+ 
+ width: 50vw; viewport width  - 50%
+               vh; vieport height
+
+ margin: auto - центрировать элемент , по середине - по горизентоли , 
+только во flex контейнере работает и по горизантали 
+
+vertical-align - используется для выравнивания ''inline'' и "inline-block" элементов внутри строки
+
+<p>Front <span>Ecnd</span></p> обвернуть в span для отступа margin или изменить текст , и так далее
+
+ &nbsp; - тег пробел 
+
+ <pre> в тег пре текст отображается таким какой он есть в html , тоесть столько пробелов , сколько указал в редкторе
+
+ https://seogift.ru/tools/ehkranirovanie-specsimvolov/ - экранирование html онлайн -  

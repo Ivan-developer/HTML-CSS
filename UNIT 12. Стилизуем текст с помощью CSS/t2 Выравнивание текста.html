@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text aligning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            font-family: Verdana;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            font-size: 74px;
+            text-align: center;
+            margin: 0px auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 50%;
+        }
+
+        div {
+            height: 200px;
+            background-color: coral;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 200px;
+        }
+
+
+        /*Выравнивание текста
+ 
+Начальный HTML код находится в редакторе ниже. HTML должен оставаться неизменным. Для добавления стилей используйте styles.css
+Основные требования:
+Задайте документу шрифт Verdana
+Текст хедера должен быть 74px, занимать половину ширины страницы и располагаться по центру по горизонтали. 
+Всерху и снизу добавьте внешние отступы 16px. Должен обрезаться с помощью троеточия
+Задайте элементу <div> высоту 200px и цвет фона coral
+Задайте тексту внутри <div> белый цвет, отрисуйте его заглавными буквами, отцентрируйте его по горизонтали
+Задайте тексту внутри <div> высоту строки 200px*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Some very long header. Really to long for this page</h1>
+    </header>
+    <div>
+        Center is here
+    </div>
+</body>
