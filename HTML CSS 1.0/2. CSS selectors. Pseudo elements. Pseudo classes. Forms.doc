@@ -1,0 +1,155 @@
+Keywords, methods, etc.
+
+ОЧЕНЬ ИНТЕРЕСНО:
+Форми: типи полів введення
+
+Теория:
+1. Отличие между тег и элемент: 
+тег: это то что открывает и закрывает элемент: <h1> tag </h1>
+элемент: <meta charser="UTF-8">
+2. Селекторы это то что выбирает элементы с html
+   
+
+.intro: selects all elements with class=”intro” - по классам
+
+#firstname: selects the element with id=”firstname” - по id 
+
+*: selects all elements - все элементы
+
+p: selects all <p> elements - все теги 
+
+#my-id: selects <p id="my-id"> or <a id="my-id"> - по id 
+
+.my-class: selects <p class="my-class"> and <a class="my-class"> - по классам 
+
+p, div: selects all <div> elements and all <p> elements - всем p и div
+
+div p: selects all <p> elements inside <div> elements
+
+border: 1px solid black;
+border-radius: 20px; - закругление углов 
+padding: 0 20px 10px 20px;
+
+div > p: selects all <p> elements where the parent is a <div> element
+
+div + p:: selects all <p> elements that are placed immediately after <div> elements
+
+p ~ ul: selects every <ul> element that is preceded by a <p> element
+
+[target]: selects all elements with a target attribute
+
+[target=_blank]: selects all elements with target=”_blank”
+
+[href*="mate.academy"]: selects every <a> element whose href attribute value contains the substring “mate.academy”
+
+img[src="myimage.png"]: selects <img src="myimage.png"> but not <img src="another.png">
+
+Псевдоклассы:
+:active,
+:empty, 
+:hover - изменение при наведение
+:link,
+:not(...),
+p:not(.class){ color: gray; } 
+:target, 
+:visited - если сылка <a> была посещенная 
+general pseudo-classes
+
+text-decoration: none;
+text-decoration: underline;
+cursor: pointer
+
+CSS reset - обнулить: 3 варинта
+body{ margin: 0}
+CDN 
+Сбросить все настройки
+
+:first-child, - первый элемент
+:first-of-type, 
+:last-child, - последний элемент
+:last-of-type, 
+:only-child, 
+:only-of-type
+:sibling-related pseudo-classes
+
+:nth-child(...),
+:nth-last-child(...), 
+:nth-of-type(...), 
+:nth-last-of-type(...)
+:sibling-related pseudo-classes with variables
+
+:checked, - используется для checkedbox
+input:checked + span { color: green } 
+
+:disabled, - если вести в input - то мы ничего не сможем делать
+:enabled, - активный - 
+
+:focus, - когда навели
+input:focus { background-color: yellow};
+
+:invalid, 
+:optional,
+ :read-only, 
+:read-write,
+ :required,
+ :valid: form-related pseudo-classes
+
+a:hover: the specified element(s), but only when in the specified state (e.g., being hovered over).
+
+::after, 
+::before,
+::first-letter, 
+::first-line, 
+::placeholder, 
+::selection: pseudo-elements
+
+!important: overriding styles
+
+form action method, input, button, select, textarea, label, fieldset, legend: forms and fields + continued + continued + continued
+
+Работа с Формами: (Семантика)
+
+<body>
+    <!-- атрибут action задоет куда форма отправляет данные -->
+    <form action="api/feedback" method="post">
+        <label>
+            <!-- name use for server -->
+            <input type="text" name="title">
+        </label>
+        <label>
+            <textarea name="feedback"></textarea>
+            <!-- для вода текста, например коментарий -->
+        </label>
+        <button>Go</button>
+    </form>
+</body>
+
+_________________________________________
+
+<input type="checkbox">
+
+<p>Choose your monster's features:</p>
+
+<div>
+  <input type="checkbox" id="scales" name="scales"
+         checked>
+  <label for="scales">Scales</label>
+</div>
+
+<div>
+  <input type="checkbox" id="horns" name="horns">
+  <label for="horns">Horns</label>
+</div>
+
+____________________________________________
+
+<input name="myFile" type="file"> - выбрать файл
+
+____________________________________________
+    <label for="email">Enter your globex.com email:</label>
+
+    <input type="email" id="email" pattern=".+@globex.com" size="30" required>
+
+
+
+&nbsp;, &lt;, &gt;, &amp;: non-breaking space, less than, greater than, ampersand, and other HTML entities

@@ -1,0 +1,56 @@
+Week 1:
+HTML and CSS basics. Semantic HTML.
+
+html lang: the root element
+head: meta information about the page
+meta charset: defines page encoding
+title: title of the browser tab 
+body: the content of the page
+
+img src alt: image - для фото , src - путь  / alt если не будет показано
+p: paragraph of text - параграф для текста 
+pre: preformatted text - тег pre реарирует на пробелы из html
+h1, h2, h3, h4, h5, h6: headings - заголовок
+ul, ol, li: unordered and ordered lists and their items - списки
+strong, em: bold and italic text - выделить жирным текстом / курсор
+ins, del: underlined and strikethrough text
+sub, sup: subscript and superscript
+a href: hyperlink
+button: button
+br: line break + continued - перенос
+hr: thematic break (horizontal line) - линия 
+
+table, tr, td, colspan, rowspan: tables, rows, cells - используется для создания таблиц
+<table style="border-collapse: collaps"> - присоединяются друг к другу
+ОЧЕНЬ ХОРОШИЙ УРОК ПО ТАБЛИЦАМ
+        <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            >
+        </tr>
+</tabel>
+
+article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time: semantic elements
+
+div, span: generic block and inline elements - генерировать блочные и строчные элементы
+id="...": unique name of the element + continued
+class="...": class name(s) of the element + continued
+title="...": tooltip text - атрибут title в img например, показывает что написали в title=''University"
+link href: way to link the page to a stylesheet
+font-size: size of the font - размер
+font-family: Arial, Helvetica, sans-serif (сначало первый, потом второй, потом третий) name of the font - название шрифта
+font-weight: bold; - жирный текст
+font-style: italic / курсор
+padding: the space just around the content
+border: the solid line that sits just outside the padding
+margin: the space outside of the border
+width: width of the element
+height: height of the element
+color: the color of an element’s content (usually text) - цвет элемента
+background-color: the color behind an element’s content and padding - цвет фона 
+text-shadow: sets a shadow on the text inside the element
+text-align: text alignment - расположение текста: right , center, left 
+rgb(...), rgba(...), #...: defining colors - red green blue способ задать цвета 
+svg / png / jpg - svg - не страдает качество - png / jpg - страдает 
+background-image - background-image: url('bmw.com') - указываем путь , таким способом мы сделали картинку фоновым 

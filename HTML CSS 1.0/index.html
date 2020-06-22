@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- атрибут action задоет куда форма отправляет данные -->
+    <form action="api/feedback" method="post">
+        <label>
+            <!-- name use for server -->
+            <input type="text" name="title">
+        </label>
+        <label>
+            <textarea name="feedback"></textarea>
+            <!-- для вода текста, например коментарий -->
+        </label>
+        <button>Go</button>
+    </form>
+
+</body>
+
+</html>
