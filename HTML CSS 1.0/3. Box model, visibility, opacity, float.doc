@@ -1,0 +1,75 @@
+Блочные: div , p , h - занимает всю ширину, width/height - имеет, 
+Строчные: span  - только свое место, width/height - не имеет, 
+что бы работал надо его сделать: display: block; display: inline-block;(width/height - имеет, )
+
+Згортання margin (margin collapse): (ВАЖНО)
+1. У блочных: margin сверху-снизу схлопываются, для этого нужно указать: display: inline-block;
+2. У строчных: нет margin сверху-сниузу, нет width-height, для этого нужно указать: display: inline-block;
+
+
+display, visibility: ways of displaying and hiding elements + continued
+display: none; - исчезнит;
+visibility: hidden; - исзчезнит но останется в html разметке
+связка: display: none; + display: block; => появление и исчезновения элемента,
+допкстим при :hover , при наведении появляется элемент 
+
+opacity: opacity (transparency) of elements
+opacity: 0.5; - прозрачность на половину 
+opacity: 0; - полностью прозрачность 
+
+Задавання ширини та висоти у відсотках: див в диве , у второго % , он меняет свой размер от внешнего
+<div style="width: 200px; height: 100px"> <div style="width: 50%; height: 50%"> </div> </div>
+
+Властивість line-height: - высота ряда
+line-height: 30px; 
+Выровнить по середине: 
+text-align: center;
+height: 100px; 
+line-height: 100px; 
+
+border-radius: rounded corners
+            border: 1px solid beige;
+            border-width: 1px;
+            border-style: solid;
+            border-color: beige;
+border-radius: 10px; закругление углов 
+круг: 
+w: 100px;
+h: 100px;
+border-radius: 50px; 
+
+Відступи: padding і margin; вирівнювання блокових елементів
+margin: отступы;
+тело => padding => border=> margin 
+padding: 20px 30px 40px 50px; => по стрелке 
+
+способы центрирования:
+        p{ - по центру текст
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p{ - браузер думает что это ноль, есть особенность
+            margin: auto;
+        }
+
+
+max-width, max-height: maximum width and height + continued
+        p{ - не больше 400px текст / 40%
+            max-width: 400px;
+        }
+        p{ - не меньше / 40%
+            min-width: 400px;
+        }
+Связка:
+        p{
+            min-width: 600px;
+            max-width: 900px;
+        }
+
+CSS box model; властивість box-sizing
+box-sizing: border-box; width, height  - включает в тело , padding , border 
+
+float, clear: floating content
+img {float: left} - обтикание для текста
+
+p { clear: left; } - зачистили float / both
