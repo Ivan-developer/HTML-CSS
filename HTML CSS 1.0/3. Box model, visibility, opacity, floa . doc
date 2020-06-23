@@ -1,1 +1,17 @@
-22
+Розташування елементів: position (static, relative, absolute), left, right, top, bottom
+position: relative; (относительный, родственник, относительно изначальной позиции элемента) 
+- теперь мы можем двигать элемент по экрану
+position: absolute; - будет позиционированно относительно всей страницы
+ищет ближайшего родителия у котрого: position: relative; или position: absolute;
+
+Властивість position: значення fixed та sticky
+
+
+position, left, right, top, bottom, z-index: positioning elements
+
+
+overflow, overflow-x, overflow-y: clipping the content
+
+cursor: cursor appearance  
+
+background, background-image, background-position, background-repeat, background-size: background options
