@@ -5,13 +5,39 @@ position: absolute; - будет позиционированно относит
 ищет ближайшего родителия у котрого: position: relative; или position: absolute;
 
 Властивість position: значення fixed та sticky
+        .menu{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: cadetblue;
+        }
 
 
 position, left, right, top, bottom, z-index: positioning elements
 
+z-index: 1; - элемент будет распологаться над другим элементом - 
+z-index: - будет работать при условии родитель: relative ; внутрение элементы absolute; 
+opacity: 0; 0.5; - прозрачность 
+
+Нелінійні обчислення: calc, vw, vh; 
+
 
 overflow, overflow-x, overflow-y: clipping the content
+
+overflow: hidden; - обрежется то что выходит за рамки - так же можно и текст обрезать
 
 cursor: cursor appearance  
 
 background, background-image, background-position, background-repeat, background-size: background options
+
+background: url ('')
+background-repeat: no-repeat;
+background-size: contain; 
+background-position: center;
+
+Тіні:
+        p{
+            text-shadow: 1px 1px 2px black;
+            box-shadow: 1px 5px 5px red;
+        }
