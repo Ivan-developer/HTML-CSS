@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* z-index: - будет работать при условии родитель: relative;
+        внутрение элементы absolute; */
+
+        div {
+            display: flex;
+            position: relative;
+        }
+
+        p {
+            /* position: absolute; */
+            z-index: 1;
+            font-size: 20px;
+            width: 500px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        img {
+            position: absolute;
+            width: 500px;
+            height: auto;
+            left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore natus vel laboriosam omnis pariatur dolorem
+            asperiores repudiandae, reiciendis dicta, nostrum, provident maiores ipsam fugit minima sunt eos praesentium
+            voluptate cumque!</p>
+        <img src="https://miro.medium.com/max/3200/1*EVqCcmCPgpNKxU1wzcTHgw.png" alt="">
+    </div>
+</body>
+
+</html>
