@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        div {
+            margin: 16px;
+        }
+
+        .gender-type {
+            margin-right: 0px;
+        }
+
+
+        /*
+Форма с несколькими инпутами
+ 
+Создайте простую форму
+Визуализация задания в файле example.jpg
+Основные требования:
+Нормализуйте стили
+Добавьте сдедующие контролы в форму. Элементы форм являются строчными, оберните каждый контрол в <div>, 
+чтобы каждый занимал отдельную строку. Дивам дайте внешний отступ 16px.
+Текстовый инпут с именем lastName и значением Emerson
+Инпут type="number" с именем age и значением 17
+Чекбокс с именем agree и текстом Accept terms and conditions
+Радиокнопки с именем gender и опциями Male, Female, Secret. div с радиокнопками обозначте классом .choose-gender
+Textarea с именем description и плейсхолдером Write description...
+Добавьте кнопку с типом submit и текстом Submit
+*/
+    </style>
+</head>
+
+<body>
+    <form>
+        <div><input type="text" name="lastName" value="Emerson"></div>
+        <div><input type="number" name="age" value="17"></div>
+        <div><input type="checkbox" name="agree">Accept terms and conditions</div>
+        <div class="choose-gender">
+            <input class="gender-type" type="radio" name="gender" checked> Male
+            <input class="gender-type" type="radio" name="gender"> Female
+            <input class="gender-type" type="radio" name="gender"> Secret
+        </div>
+        <div>
+            <textarea name="description" placeholder="Write description..."></textarea>
+        </div>
+        <div><button type="submit">Submit</button></div>
+    </form>
+
+</body>
+
+</html>
